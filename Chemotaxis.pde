@@ -2,6 +2,7 @@
  void setup()   
  {     
  	//initialize bacteria variables here   
+ 	size(400, 400);
  }   
  void draw()   
  {    
@@ -9,5 +10,20 @@
  }  
  class Bacteria    
  {     
- 	//lots of java!   
+ 	int myX, myY, mySize, myMove;
+ 	Bacteria()
+ 	{
+ 		myX = (int)(Math.random()*401);
+ 		myY = (int)(Math.random()*401);
+ 		mySize = (int)(Math.random()*11);
+
+ 	}
+ 	void move()
+ 	{
+ 		if(myX > mouseX)
+ 		{
+ 			myX = myX + (int)(Math.random()*5)-2;
+ 		}
+ 	}
+
  }    
