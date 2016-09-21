@@ -4,7 +4,7 @@
  {     
  	//initialize bacteria variables here   
  	size(400, 400);
- 	frameRate(30);
+ 	frameRate(5);
  }   
  void draw()   
  {    
