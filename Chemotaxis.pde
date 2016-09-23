@@ -6,7 +6,7 @@ Bacteria[] bac;
  	size(400, 400);
  	noLoop();
  	
- 	bac = new Bacteria[50];
+ 	bac = new Bacteria[1000];
  	for(int i = 0; i < bac.length; i++)
  	{
  		bac[i] = new Bacteria();
@@ -22,11 +22,14 @@ Bacteria[] bac;
  		bac[i].move();
  		bac[i].show();
  	}
- 	if(get(mouseX, mouseY != color (0))
+ 	if(get(mouseX, mouseY) != color (0, 0, 0))
  	{
  		textAlign(CENTER, CENTER);
  		textSize(50);
+ 		fill(255);
  		text("You Lose", 200, 200);
+ 		textSize(20);
+ 		text("Click the black to continue playing.", 200, 250);
  	}
  	
 
